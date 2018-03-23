@@ -6,11 +6,11 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 public class TestLifeCycle implements BeanPostProcessor {
   public Object postProcessBeforeInitialization(Object o, String s) throws BeansException {
     System.out.println("BeforeInitialization : " + s);
-    return null;
+    return o;
   }
 
   public Object postProcessAfterInitialization(Object o, String s) throws BeansException {
     System.out.println("AfterInitialization : " + s);
-    return null;
+    return o;
   }
 }
