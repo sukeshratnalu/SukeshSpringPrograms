@@ -7,7 +7,7 @@ public class Student implements InitializingBean/*, DisposableBean*/ {
   private int id;
   private String name;
 
-  /*public Student() {
+  public Student() {
     System.out.println("calling default constructor...........!");
     System.out.println(name);
   }
@@ -23,7 +23,7 @@ public class Student implements InitializingBean/*, DisposableBean*/ {
   public Student(int id, String name) {
     this.id = id;
     this.name = name;
-  }*/
+  }
 
   public void setName(String name){
     this.name = name;
